@@ -1,9 +1,12 @@
+@charset "UTF-8";
+/* Resetowanie stylów dla wszystkich elementów */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Stylizacja dla całego dokumentu */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -13,20 +16,29 @@ body {
   padding: 0;
 }
 
+/* Stylizacja dla nagłówka */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Stylizacja dla formularza wyszukiwania */
 .search-form {
   text-align: center;
   margin-top: 20px;
 }
 
-input[type='text'] {
-  width: 50%;
+input[type=text] {
+  width: 100%;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button[type='submit'] {
+button[type=submit] {
   background-color: #333;
   color: #fff;
   border: none;
@@ -35,6 +47,7 @@ button[type='submit'] {
   cursor: pointer;
 }
 
+/* Stylizacja dla galerii */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +63,6 @@ button[type='submit'] {
   padding: 10px;
   background-color: #fff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  max-height: auto;
 }
 
 img {
@@ -59,7 +71,6 @@ img {
 }
 
 .info {
-  display: flex;
   margin-top: 10px;
   font-size: 0.9rem;
 }
@@ -68,6 +79,7 @@ img {
   margin-bottom: 5px;
 }
 
+/* Stylizacja dla przycisku "Load more" */
 .load-more {
   display: block;
   margin: 20px auto;
@@ -84,6 +96,20 @@ img {
   background-color: #555;
 }
 
+/* Ukrywanie przycisku "Load more" na początku */
 .is-hidden {
   display: none !important;
 }
+
+/* Powiadomienia Notiflix */
+.notiflix-notification {
+  max-width: 300px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Style dla SimpleLightbox */
+/* Możesz dostosować te style zgodnie z dokumentacją SimpleLightbox *//*# sourceMappingURL=index.css.map */
